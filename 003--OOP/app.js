@@ -10,15 +10,17 @@ class MyData {
 }
 let x = new MyData();
 console.log(x.age, x.email, x.name);
-// Classes & Objects : Constructor
+// Classes & Objects : Constructor ,this. keyword
 class NewData {
     constructor(MyName, MyAge) {
         this.MyName = MyName;
         this.MyAge = MyAge;
     }
+    show() {
+        console.log('Name:  ' + this.MyName + 'Age: ' + this.MyAge);
+    }
 }
 let b = new NewData('janisar', 19);
-// Classes & Objects : this. keyword
 // Classes & Objects : Public & Private 
 // Access Modifier
 // Classes & Objects : Protected, Optional Properties

@@ -11,13 +11,16 @@ console.log(x.age,x.email,x.name);
 
 
 
-// Classes & Objects : Constructor
+// Classes & Objects : Constructor ,this. keyword
  class NewData{
+    
     constructor(public MyName: string, public MyAge: number){}
+    show(): void  {
+        console.log('Name:  ' +this.MyName+'Age: '+ this.MyAge);
+    }
  }
  let b = new NewData('janisar', 19)
 
-// Classes & Objects : this. keyword
  
 // Classes & Objects : Public & Private 
 
